@@ -51,6 +51,11 @@ function convertir() {
         const valor_moneda =valor*valorDe;
         const resultado= valor_moneda/valorA;
         console.log(resultado);
+        const valor1 = document.createElement('span');
+        const aviso = document.getElementById('alert');
+        valor1.innerHTML = `${resultado}`
+        
+        aviso.appendChild(valor1);
     }
 
    // console.log(cambioDe, cambioA);
